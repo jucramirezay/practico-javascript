@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas</title>
+</head>
+<body>
+    <header>
+        <h1>Figuras geométricas</h1>
+        <p>Este es el primer taller del curso practico de JavaScript</p>
+    </header>
+    <section>
+        <h2>Calcula el área y perimetro de un cuadrado</h2>
+        <form>
+            <!-- Gracias al for del label que se comparte con el id del input. Una vez se de click al label se redirije también al input -->
+            <label for="input-cuadrado">Escribe cuanto mide cada lado de tu cuadrado</label>
+            <input id='input-cuadrado' type="number">
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perimetro</button> <!-- onClik es el método que se llama de javascript una vez se oprime el botón-->
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
+        </form>
+    </section>
+    <section>
+        <h2>Calcula el área y perimetro de un triangulo</h2>
+        <form>
+            <!-- Gracias al for del label que se comparte con el id del input. Una vez se de click al label se redirije también al input -->
+            <label for="input-triangulo1">Escribe cuanto mide el primer lado de tu triangulo</label>
+            <input id='input-triangulo1' type="number"> <br>
+            <label for="input-triangulo2">Escribe cuanto mide el segundo lado de tu triangulo</label>
+            <input id='input-triangulo2' type="number"> <br>
+            <label for="input-triangulo3">Escribe cuanto mide la base de tu triangulo</label>
+            <input id='input-triangulo3' type="number"> <br>
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perimetro</button> <!-- onClik es el método que se llama de javascript una vez se oprime el botón-->
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
+        </form>
+    </section>
+    <section>
+        <h2>Calcula el área y perimetro de un circulo</h2>
+        <form>
+            <!-- Gracias al for del label que se comparte con el id del input. Una vez se de click al label se redirije también al input -->
+            <label for="input-circulo">Escribe el radio del circulo</label>
+            <input id='input-circulo' type="number">
+            <button type="button" onclick="calcularPerimetroCirculo()">Calcular circunferencia</button> <!-- onClik es el método que se llama de javascript una vez se oprime el botón-->
+            <button type="button" onclick="calcularAreaCirculo()">Calcular área</button>
+        </form>
+    </section>
+    <script src="figuras.js"></script>
+</body>
+</html>
